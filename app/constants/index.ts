@@ -1,5 +1,6 @@
 import { cva } from "class-variance-authority";
-import { Clock, Globe, Package, Plane, Shield, Ship, Truck, Users } from "lucide-react";
+import { Clock, FileCheck, Globe, Package, Plane, Shield, Ship, Truck, Users, Warehouse } from "lucide-react";
+import { Service } from "../models/service";
 
 
 export const phoneNumber = "+54 9 11 2756-3537";
@@ -43,23 +44,47 @@ export const navLinks = [
     { path: "/contact", label: "Contacto" },
   ];
 
-export const services = [
+export const services: Service[] = [
     {
       icon: Ship,
       title: "Transporte Marítimo",
       description: "Soluciones completas de carga marítima para importaciones y exportaciones globales.",
+      sum_description: "Transporte Marítimo",
+      features: [
+        "FCL (Full Container Load) - Contenedores completos",
+        "LCL (Less than Container Load) - Carga consolidada",
+        "Servicios de carga Break Bulk y proyectos especiales",
+        "Gestión de documentación y despacho aduanero",
+        "Rastreo en tiempo real del contenedor",
+      ],
       image: "/containers_hero.jpeg"
     },
     {
       icon: Plane,
       title: "Transporte Aéreo",
       description: "Envíos urgentes y mercancías especiales con las mejores aerolíneas de carga.",
+      sum_description: "Rapidez y eficiencia en el aire",
+      features: [
+        "Servicios express para cargas urgentes",
+        "Carga general y mercancías especiales",
+        "Transporte de productos perecederos con cadena de frío",
+        "Hand carry y courier internacional",
+        "Charter de aviones para proyectos especiales",
+      ],
       image: "/airplane.jpeg"
     },
     {
       icon: Truck,
       title: "Transporte Terrestre",
       description: "Distribución nacional e internacional por carretera con seguimiento en tiempo real.",
+      sum_description: "Soluciones de distribución nacional e internacional",
+      features: [
+        "Transporte nacional de carga completa y parcial",
+        "Distribución urbana y last mile delivery",
+        "Transporte internacional por carretera",
+        "Vehículos especializados (refrigerados, secos, plataformas)",
+        "Tracking GPS en tiempo real",
+      ],
       image: "/truck.jpeg"
     },
     {
@@ -115,5 +140,33 @@ export const testimonials = [
       name: "Ana Martínez",
       company: "Global Trade Inc",
       text: `La mejor decisión fue confiar en ${companyName.join(" ")}. Han optimizado nuestros tiempos y reducido costos significativamente.`,
+    },
+  ];
+
+export const additionalServices = [
+    {
+      icon: FileCheck,
+      title: "Servicios Aduanales",
+      description: "Gestión integral de trámites de importación y exportación con agentes especializados.",
+    },
+    {
+      icon: Warehouse,
+      title: "Almacenamiento",
+      description: "Bodegas propias y en red global con sistemas de gestión WMS avanzados.",
+    },
+    {
+      icon: Package,
+      title: "Embalaje y Etiquetado",
+      description: "Servicios de empaque especializado, etiquetado y preparación de mercancías.",
+    },
+    {
+      icon: Shield,
+      title: "Seguros de Carga",
+      description: "Pólizas de seguro internacional para proteger tu inversión en tránsito.",
+    },
+    {
+      icon: Clock,
+      title: "Consultoría Logística",
+      description: "Asesoramiento estratégico para optimizar costos y tiempos de tu cadena de suministro.",
     },
   ];
