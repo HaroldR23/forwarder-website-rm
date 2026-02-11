@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { Ship, Menu, X } from "lucide-react";
 import Button from "../common/Button";
-import { navLinks } from "../constants";
+import { companyName, navLinks } from "../constants";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -35,8 +35,8 @@ const Header = () => {
               <Ship className="w-6 h-6" style={{ color: 'var(--brand-orange)' }} />
             </div>
             <div className="flex flex-col">
-              <span className="font-semibold" style={{ color: 'var(--brand-navy)' }}>GlobalWay</span>
-              <span className="text-xs" style={{ color: 'var(--brand-teal)' }}>Forwarders</span>
+              <span className="font-semibold" style={{ color: 'var(--brand-navy)' }}>{companyName[0]}</span>
+              <span className="text-xs" style={{ color: 'var(--brand-teal)' }}>{companyName[1]}</span>
             </div>
           </Link>
 
@@ -60,7 +60,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Link href="/contact">
-              <Button className="bg-(--brand-orange) hover:bg-(--brand-orange)/90 text-white">
+              <Button className="bg-(--brand-orange) hover:bg-(--brand-orange)/90 text-white cursor-pointer">
                 Cotizar Ahora
               </Button>
             </Link>
@@ -88,7 +88,7 @@ const Header = () => {
                 key={link.path}
                 href={link.path}
                 className={`block py-3 transition-colors hover:text-(--brand-orange) ${
-                  location.pathname === link.path
+                    pathname === link.path
                     ? "text-(--brand-orange)"
                     : "text-(--brand-navy)"
                 }`}
@@ -98,7 +98,7 @@ const Header = () => {
               </Link>
             ))}
             <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-              <Button className="w-full mt-4 bg-(--brand-orange) hover:bg-(--brand-orange)/90 text-white">
+              <Button className="w-full mt-4 bg-(--brand-orange) hover:bg-(--brand-orange)/90 text-white cursor-pointer">
                 Cotizar Ahora
               </Button>
             </Link>

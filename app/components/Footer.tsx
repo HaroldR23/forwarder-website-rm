@@ -1,5 +1,6 @@
 import { Ship, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import Link from "next/link";
+import { companyName, navLinks, phoneNumber, services } from "../constants";
 
 const Footer = () => {
   return (
@@ -13,8 +14,8 @@ const Footer = () => {
                 <Ship className="w-6 h-6 text-white" />
               </div>
               <div className="flex flex-col">
-                <span className="font-semibold text-white">GlobalWay</span>
-                <span className="text-xs text-(--brand-orange)">Forwarders</span>
+                <span className="font-semibold text-white">{companyName[0]}</span>
+                <span className="text-xs text-(--brand-orange)">{companyName[1]}</span>
               </div>
             </div>
             <p className="text-sm text-gray-300 mb-4">
@@ -40,36 +41,13 @@ const Footer = () => {
           <div>
             <h4 className="mb-4 text-(--brand-orange)">Enlaces Rápidos</h4>
             <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/" className="text-gray-300 hover:text-(--brand-orange) transition-colors">
-                  Inicio
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="text-gray-300 hover:text-(--brand-orange) transition-colors">
-                  Servicios
-                </Link>
-              </li>
-              <li>
-                <Link href="/tracking" className="text-gray-300 hover:text-(--brand-orange) transition-colors">
-                  Tracking
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-gray-300 hover:text-(--brand-orange) transition-colors">
-                  Sobre Nosotros
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-gray-300 hover:text-(--brand-orange) transition-colors">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-gray-300 hover:text-(--brand-orange) transition-colors">
-                  Contacto
-                </Link>
-              </li>
+              {navLinks.map((link) => (
+                <li key={link.path}>
+                  <Link href={link.path} className="hover:text-(--brand-orange) transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -77,12 +55,9 @@ const Footer = () => {
           <div>
             <h4 className="mb-4 text-(--brand-orange)">Servicios</h4>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li>Transporte Marítimo</li>
-              <li>Transporte Aéreo</li>
-              <li>Transporte Terrestre</li>
-              <li>Servicios Aduanales</li>
-              <li>Almacenaje</li>
-              <li>Seguros de Carga</li>
+              {services.map((service) => (
+                <li key={service.title}>{service.title}</li>
+              ))}
             </ul>
           </div>
 
@@ -92,11 +67,11 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-gray-300">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-1 shrink-0" />
-                <span>Av. Principal 1234, Buenos Aires, Argentina</span>
+                <span>Buenos Aires, Argentina</span>
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 shrink-0" />
-                <span>+54 11 4567-8900</span>
+                <span>{phoneNumber}</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 shrink-0" />
@@ -109,7 +84,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-            <p>&copy; 2026 GlobalWay Forwarders. Todos los derechos reservados.</p>
+            <p>&copy; 2026 {companyName.join(" ")}. Todos los derechos reservados.</p>
             <div className="flex gap-6">
               <a href="#" className="hover:text-(--brand-orange) transition-colors">
                 Política de Privacidad
