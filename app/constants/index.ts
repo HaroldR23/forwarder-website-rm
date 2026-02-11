@@ -1,5 +1,5 @@
 import { cva } from "class-variance-authority";
-import { Clock, FileCheck, Globe, Package, Plane, Shield, Ship, Truck, Users, Warehouse } from "lucide-react";
+import { Award, Clock, FileCheck, Globe, Package, Plane, Shield, Ship, TrendingUp, Truck, Users, Warehouse } from "lucide-react";
 import { Service } from "../models/service";
 
 
@@ -169,4 +169,35 @@ export const additionalServices = [
       title: "Consultoría Logística",
       description: "Asesoramiento estratégico para optimizar costos y tiempos de tu cadena de suministro.",
     },
+  ];
+
+export const values = [
+    {
+      icon: Award,
+      title: "Confianza",
+      description: "Construimos relaciones duraderas basadas en transparencia, responsabilidad y cumplimiento.",
+    },
+    {
+      icon: TrendingUp,
+      title: "Agilidad",
+      description: "Respondemos con rapidez a las necesidades del mercado y adaptamos nuestras soluciones.",
+    },
+    {
+      icon: Globe,
+      title: "Globalidad",
+      description: "Presencia internacional con red de agentes en más de 150 países alrededor del mundo.",
+    },
+    {
+      icon: Users,
+      title: "Compromiso",
+      description: "Equipo dedicado a superar las expectativas y garantizar el éxito de cada proyecto.",
+    },
+  ];
+
+export const coverage = [
+    { region: "América", countries: "45 países", color: "var(--brand-orange)" },
+    { region: "Europa", countries: "38 países", color: "var(--brand-teal)" },
+    { region: "Asia", countries: "42 países", color: "var(--brand-navy)" },
+    { region: "África", countries: "28 países", color: "var(--brand-orange)" },
+    { region: "Oceanía", countries: "12 países", color: "var(--brand-teal)" },
   ];
