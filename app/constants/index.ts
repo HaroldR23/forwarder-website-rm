@@ -201,3 +201,39 @@ export const coverage = [
     { region: "África", countries: "28 países", color: "var(--brand-orange)" },
     { region: "Oceanía", countries: "12 países", color: "var(--brand-teal)" },
   ];
+
+export const articles = [
+    {
+      id: 1,
+      title: "Guía Completa para Embalaje de Carga Internacional",
+      excerpt: "Aprende las mejores prácticas para embalar mercancías según el modo de transporte. Tips esenciales para proteger tu inversión durante el tránsito.",
+      author: "Carlos Rodríguez",
+      date: "1 Feb 2026",
+      category: "Guías",
+      url: "https://www.petersandmay.com/es/guide/a-guide-to-general-cargo-preparation-packaging-for-shipment/",
+      image: "/articulo_1.jpg",
+      icon: Package,
+    },
+    {
+      id: 2,
+      title: "Comercio Exterior: Documentación Esencial para Exportar",
+      excerpt: "Lista completa de documentos requeridos para operaciones de exportación. Evita demoras en aduana con esta guía práctica y actualizada.",
+      author: "Ana Martínez",
+      date: "28 Ene 2026",
+      category: "Comercio Exterior",
+      url: "https://www.icontainers.com/es/guias-logistica-internacional/",
+      image: "/articulo_2.jpg",
+      icon: Globe,
+    },
+    {
+      id: 3,
+      title: "Transporte Marítimo vs Aéreo: ¿Cuál Elegir?",
+      excerpt: "Comparativa detallada entre los dos principales modos de transporte internacional. Costos, tiempos y casos de uso recomendados.",
+      author: "Diego Fernández",
+      date: "22 Ene 2026",
+      category: "Comparativas",
+      url: "https://www.worldwideexpress.com/air-freight-vs-sea-freight-guide/",
+      image: "/articulo_3.jpg",
+      icon: TrendingUp,
+    }
+  ];
