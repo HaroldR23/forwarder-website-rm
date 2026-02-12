@@ -1,5 +1,5 @@
 import { cva } from "class-variance-authority";
-import { Award, Clock, FileCheck, Globe, Package, Plane, Shield, Ship, TrendingUp, Truck, Users, Warehouse } from "lucide-react";
+import { Award, Clock, FileCheck, Globe, Mail, MessageCircle, Package, Phone, Plane, Shield, Ship, TrendingUp, Truck, Users, Warehouse } from "lucide-react";
 import { Service } from "../models/service";
 
 
@@ -236,4 +236,33 @@ export const articles = [
       image: "/articulo_3.jpg",
       icon: TrendingUp,
     }
+  ];
+
+export const messageQuote = 'Hola, me gustaría recibir una cotización personalizada para mi envío.';
+export const whatsappLink = `https://wa.me/${phoneNumber.replace(/\D/g, '')}?text=${encodeURIComponent(messageQuote)}`;
+export const contactInfo = [
+    {
+      icon: MessageCircle,
+      title: "WhatsApp",
+      details: [phoneNumber],
+      href: whatsappLink,
+    },
+    {
+      icon: Mail,
+      title: "Email",
+      details: ["info@globalway.com"],
+      href: "mailto: info@globalway.com",
+    },
+    {
+      icon: Phone,
+      title: "Teléfono",
+      details: [phoneNumber],
+      href: `tel:${phoneNumber.replace(/\D/g, '')}`,
+    },
+    {
+      icon: Clock,
+      title: "Horario",
+      details: ["Lunes a Viernes", "9:00 - 18:00 hs", "Sábados: 9:00 - 13:00 hs"],
+      href: "#",
+    },
   ];
