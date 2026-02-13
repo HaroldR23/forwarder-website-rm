@@ -32,9 +32,10 @@ const Blog = () => {
           >
             <Card className="overflow-hidden hover:shadow-2xl cursor-pointer">
               <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="relative h-100">
+                <div className="relative">
                   <Image
-                  fill
+                    width={600}
+                    height={400}
                     src={featuredArticle.image}
                     alt={featuredArticle.title}
                     className="w-full h-full object-cover"

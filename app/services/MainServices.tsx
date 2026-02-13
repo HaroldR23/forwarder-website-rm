@@ -25,11 +25,12 @@ const MainServices = () => {
                 className={`flex flex-col ${isReverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8 items-center`}
               >
                 <div className="lg:w-1/2">
-                  <div className="relative h-100 rounded-2xl overflow-hidden shadow-xl">
+                    <div className="relative rounded-2xl overflow-hidden shadow-xl">
                     <Image
                       src={service.image}
-                      alt={service.image}
-                      fill
+                      alt={service.title}
+                      height={400}
+                      width={600}
                       className="w-full h-full object-cover"
                     />
                   </div>
