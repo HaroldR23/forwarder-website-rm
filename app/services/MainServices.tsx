@@ -17,12 +17,13 @@ const MainServices = () => {
             
             return (
               <motion.div
+                id={service.id}
                 key={`${service.title}-main-service`}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+                viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6 }}
-                className={`flex flex-col ${isReverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8 items-center`}
+                className={`scroll-mt-32 flex flex-col ${isReverse ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8 items-center`}
               >
                 <div className="lg:w-1/2">
                     <div className="relative rounded-2xl overflow-hidden shadow-xl">
@@ -31,6 +32,7 @@ const MainServices = () => {
                       alt={service.title}
                       height={400}
                       width={600}
+                      loading="eager"
                       className="w-full h-full object-cover"
                     />
                   </div>

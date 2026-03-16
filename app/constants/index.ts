@@ -46,6 +46,7 @@ export const navLinks = [
 
 export const services: Service[] = [
     {
+      id: "maritime",
       icon: Ship,
       title: "Transporte Marítimo",
       description: "Soluciones completas de carga marítima para importaciones y exportaciones globales.",
@@ -60,6 +61,7 @@ export const services: Service[] = [
       image: "/containers_hero.jpeg"
     },
     {
+      id: "air",
       icon: Plane,
       title: "Transporte Aéreo",
       description: "Envíos urgentes y mercancías especiales con las mejores aerolíneas de carga.",
@@ -74,6 +76,7 @@ export const services: Service[] = [
       image: "/airplane.jpeg"
     },
     {
+      id: "land",
       icon: Truck,
       title: "Transporte Terrestre",
       description: "Distribución nacional e internacional por carretera con seguimiento en tiempo real.",
@@ -88,6 +91,7 @@ export const services: Service[] = [
       image: "/truck.jpeg"
     },
     {
+      id: "value-added",    
       icon: Package,
       title: "Servicios de Valor Agregado",
       description: "Seguros, embalaje, desconsolidación, etiquetado y almacenamiento especializado.",
