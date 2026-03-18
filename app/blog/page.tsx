@@ -41,14 +41,14 @@ const Blog = () => {
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute top-4 left-4">
-                    <span className="px-4 py-2 rounded-full text-sm text-white" style={{ backgroundColor: 'var(--brand-orange)' }}>
+                    <span className="px-4 py-2 rounded-full text-sm text-white" style={{ backgroundColor: 'var(--brand-ocean)' }}>
                       Destacado
                     </span>
                   </div>
                 </div>
                 <CardContent className="p-8 lg:p-12 flex flex-col justify-center">
                   <div className="flex items-center gap-4 mb-4">
-                    <span className="px-3 py-1 rounded-full text-sm" style={{ backgroundColor: 'var(--brand-teal)', color: 'white' }}>
+                    <span className="px-3 py-1 rounded-full text-sm" style={{ backgroundColor: 'var(--brand-green)', color: 'white' }}>
                       {featuredArticle.category}
                     </span>
                   </div>
@@ -58,7 +58,7 @@ const Blog = () => {
                   <p className="text-gray-600 mb-6 text-lg">
                     {featuredArticle.excerpt}
                   </p>
-                  <Button className="bg-(--brand-orange) hover:bg-(--brand-orange)/90 text-white w-fit cursor-pointer" onClick={() => handleRedirect(featuredArticle.url)}>
+                  <Button className="bg-(--brand-ocean) hover:bg-(--brand-ocean)/90 text-white w-fit cursor-pointer" onClick={() => handleRedirect(featuredArticle.url)}>
                     Leer Artículo Completo
                     <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
@@ -100,18 +100,18 @@ const Blog = () => {
                       />
                       <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent" />
                       <div className="absolute bottom-4 left-4">
-                        <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'var(--brand-orange)' }}>
+                        <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'var(--brand-ocean)' }}>
                           <Icon className="w-5 h-5 text-white" />
                         </div>
                       </div>
                       <div className="absolute top-4 right-4">
-                        <span className="px-3 py-1 rounded-full text-xs text-white" style={{ backgroundColor: 'var(--brand-teal)' }}>
+                        <span className="px-3 py-1 rounded-full text-xs text-white" style={{ backgroundColor: 'var(--brand-green)' }}>
                           {article.category}
                         </span>
                       </div>
                     </div>
                     <CardContent className="p-6">
-                      <h3 className="text-xl mb-3 group-hover:text-(--brand-orange) transition-colors" style={{ color: 'var(--brand-navy)' }}>
+                      <h3 className="text-xl mb-3 group-hover:text-(--brand-ocean) transition-colors" style={{ color: 'var(--brand-navy)' }}>
                         {article.title}
                       </h3>
                       <p className="text-sm text-gray-600 mb-4">

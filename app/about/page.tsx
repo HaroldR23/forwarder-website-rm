@@ -1,4 +1,3 @@
-import GlobalCoverage from "./GlobalCovarage";
 import Hero from "./Hero";
 import Mision from "./Mision";
 import Story from "./Story";
@@ -11,7 +10,6 @@ const About = () => {
       <Story />
       <Mision />
       <Values />
-      <GlobalCoverage />
     </div>
   );
 };

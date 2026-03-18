@@ -31,13 +31,13 @@ const Testimonials = () => {
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
                     {[...Array(5)].map((_, i) => (
-                      <Award key={i} className="w-5 h-5 fill-(--brand-orange) text-(--brand-orange)" />
+                      <Award key={i} className="w-5 h-5 fill-(--brand-ocean) text-(--brand-ocean)" />
                     ))}
                   </div>
                   <p className="text-white/90 mb-4 italic">{`"${testimonial.text}"`}</p>
                   <div className="border-t border-white/20 pt-4">
                     <div className="text-white">{testimonial.name}</div>
-                    <div className="text-sm text-(--brand-orange)">{testimonial.company}</div>
+                    <div className="text-sm text-(--brand-ocean)">{testimonial.company}</div>
                   </div>
                 </CardContent>
               </Card>

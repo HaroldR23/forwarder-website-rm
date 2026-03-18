@@ -1,9 +1,10 @@
 import { cva } from "class-variance-authority";
-import { Award, Clock, FileCheck, Globe, Mail, MessageCircle, Package, Phone, Plane, Shield, Ship, TrendingUp, Truck, Users, Warehouse } from "lucide-react";
+import { Clock, FileCheck, Globe, Heart, Mail, MessageCircle, Package, Plane, Shield, Ship, TrendingUp, Truck, Users, Warehouse } from "lucide-react";
 import { Service } from "../models/service";
 
 
-export const phoneNumber = "+54 9 11 2756-3537";
+export const rodrigosPhoneNumber = "+54 9 11 2756-3537";
+export const santiagosPhoneNumber = "+54 9 11 3770-8004";
 export const companyName = ["GlobalWay", "Forwarders"];
 export const buttonVariants = cva(
   "inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive",
@@ -40,7 +41,7 @@ export const navLinks = [
     { path: "/services", label: "Servicios" },
     // { path: "/tracking", label: "Tracking" },
     { path: "/about", label: "Nosotros" },
-    { path: "/blog", label: "Blog" },
+    // { path: "/blog", label: "Blog" },
     { path: "/contact", label: "Contacto" },
   ];
 
@@ -58,7 +59,7 @@ export const services: Service[] = [
         "Gestión de documentación y despacho aduanero",
         "Rastreo en tiempo real del contenedor",
       ],
-      image: "/containers_hero.jpeg"
+      image: "/transporte_maritimo.jpg"
     },
     {
       id: "air",
@@ -88,7 +89,7 @@ export const services: Service[] = [
         "Vehículos especializados (refrigerados, secos, plataformas)",
         "Tracking GPS en tiempo real",
       ],
-      image: "/truck.jpeg"
+      image: "/transporte_terrestre.jpg"
     },
     {
       id: "value-added",    
@@ -156,7 +157,7 @@ export const additionalServices = [
     {
       icon: Warehouse,
       title: "Almacenamiento",
-      description: "Bodegas propias y en red global con sistemas de gestión WMS avanzados.",
+      description: "Bodegas propias y en red global.",
     },
     {
       icon: Package,
@@ -176,34 +177,34 @@ export const additionalServices = [
   ];
 
 export const values = [
-    {
-      icon: Award,
-      title: "Confianza",
-      description: "Construimos relaciones duraderas basadas en transparencia, responsabilidad y cumplimiento.",
-    },
-    {
-      icon: TrendingUp,
-      title: "Agilidad",
-      description: "Respondemos con rapidez a las necesidades del mercado y adaptamos nuestras soluciones.",
-    },
-    {
-      icon: Globe,
-      title: "Globalidad",
-      description: "Presencia internacional con red de agentes en más de 150 países alrededor del mundo.",
-    },
-    {
-      icon: Users,
-      title: "Compromiso",
-      description: "Equipo dedicado a superar las expectativas y garantizar el éxito de cada proyecto.",
-    },
-  ];
+  {
+    icon: Heart,
+    title: "Servicio Personalizado",
+    description: "Cada cliente es único. Brindamos atención cercana y soluciones a medida para cada operación.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Agilidad y Eficiencia",
+    description: "Respondemos con rapidez porque sabemos que detrás de cada embarque hay tiempos y expectativas que cumplir.",
+  },
+  {
+    icon: Shield,
+    title: "Transparencia",
+    description: "Acompañamos cada etapa del proceso con responsabilidad, claridad y comunicación constante.",
+  },
+  {
+    icon: Users,
+    title: "Experiencia que Transforma",
+    description: "Más de 10 años en comercio exterior nos permiten anticipar necesidades y ofrecer soluciones reales.",
+  },
+];
 
 export const coverage = [
-    { region: "América", countries: "45 países", color: "var(--brand-orange)" },
-    { region: "Europa", countries: "38 países", color: "var(--brand-teal)" },
+    { region: "América", countries: "45 países", color: "var(--brand-ocean)" },
+    { region: "Europa", countries: "38 países", color: "var(--brand-green)" },
     { region: "Asia", countries: "42 países", color: "var(--brand-navy)" },
-    { region: "África", countries: "28 países", color: "var(--brand-orange)" },
-    { region: "Oceanía", countries: "12 países", color: "var(--brand-teal)" },
+    { region: "África", countries: "28 países", color: "var(--brand-ocean)" },
+    { region: "Oceanía", countries: "12 países", color: "var(--brand-green)" },
   ];
 
 export const articles = [
@@ -242,26 +243,26 @@ export const articles = [
     }
   ];
 
-export const messageQuote = 'Hola, me gustaría recibir una cotización personalizada para mi envío.';
-export const whatsappLink = `https://wa.me/${phoneNumber.replace(/\D/g, '')}?text=${encodeURIComponent(messageQuote)}`;
+export const messageQuote = (name: string) => `Hola ${name}, me gustaría recibir una cotización personalizada para mi envío.`;
+export const whatsappLink = (phoneNumber: string, name: string) => `https://wa.me/${phoneNumber.replace(/\D/g, '')}?text=${encodeURIComponent(messageQuote(name))}`;
 export const contactInfo = [
     {
       icon: MessageCircle,
       title: "WhatsApp",
-      details: [phoneNumber],
-      href: whatsappLink,
+      details: ["Santiago Minuzzi", `${santiagosPhoneNumber}`],
+      href: whatsappLink(santiagosPhoneNumber, "Santiago"),
+    },
+    {
+      icon: MessageCircle,
+      title: "WhatsApp",
+      details: ["Rodrigo Moreno Vélez", `${rodrigosPhoneNumber}`],
+      href: whatsappLink(rodrigosPhoneNumber, "Rodrigo"),
     },
     {
       icon: Mail,
       title: "Email",
-      details: ["info@globalway.com"],
-      href: "mailto: info@globalway.com",
-    },
-    {
-      icon: Phone,
-      title: "Teléfono",
-      details: [phoneNumber],
-      href: `tel:${phoneNumber.replace(/\D/g, '')}`,
+      details: ["comercial@colsurcomex.com.ar"],
+      href: "mailto: comercial@colsurcomex.com.ar",
     },
     {
       icon: Clock,

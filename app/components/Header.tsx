@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { Ship, Menu, X } from "lucide-react";
-import Button from "../common/Button";
-import { companyName, navLinks } from "../constants";
+import { Menu, X } from "lucide-react";
+import { navLinks } from "../constants";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,13 +19,12 @@ const Header = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'var(--brand-navy)' }}>
-              <Ship className="w-6 h-6" style={{ color: 'var(--brand-orange)' }} />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-semibold" style={{ color: 'var(--brand-navy)' }}>{companyName[0]}</span>
-              <span className="text-xs" style={{ color: 'var(--brand-teal)' }}>{companyName[1]}</span>
-            </div>
+            <Image
+              src="/logotipo_colsur.png"
+              alt="Logo colsur"
+              width={200}
+              height={100}
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -34,24 +33,15 @@ const Header = () => {
               <Link
                 key={link.path}
                 href={link.path}
-                className={`transition-colors hover:text-(--brand-orange) ${
+                className={`transition-colors hover:text-(--brand-ocean) ${
                   pathname === link.path
-                    ? "text-(--brand-orange)"
+                    ? "text-(--brand-ocean)"
                     : "text-(--brand-navy)"
                 }`}
               >
                 {link.label}
               </Link>
             ))}
-          </div>
-
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Link href="/contact">
-              <Button className="bg-(--brand-orange) hover:bg-(--brand-orange)/90 text-white cursor-pointer">
-                Cotizar Ahora
-              </Button>
-            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -75,9 +65,9 @@ const Header = () => {
               <Link
                 key={link.path}
                 href={link.path}
-                className={`block py-3 transition-colors hover:text-(--brand-orange) ${
+                className={`block py-3 transition-colors hover:text-(--brand-ocean) ${
                     pathname === link.path
-                    ? "text-(--brand-orange)"
+                    ? "text-(--brand-ocean)"
                     : "text-(--brand-navy)"
                 }`}
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -85,11 +75,6 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
-            <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-              <Button className="w-full mt-4 bg-(--brand-orange) hover:bg-(--brand-orange)/90 text-white cursor-pointer">
-                Cotizar Ahora
-              </Button>
-            </Link>
           </div>
         )}
       </div>

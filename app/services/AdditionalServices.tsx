@@ -31,7 +31,7 @@ const AdditionalServices = () => {
                 <Card className="h-full hover:shadow-xl transition-shadow">
                   <CardContent className="p-6">
                     <div className="w-14 h-14 rounded-lg flex items-center justify-center mb-4" style={{ backgroundColor: 'var(--brand-navy)' }}>
-                      <Icon className="w-7 h-7 text-(--brand-orange)" />
+                      <Icon className="w-7 h-7 text-(--brand-ocean)" />
                     </div>
                     <h3 className="mb-3" style={{ color: 'var(--brand-navy)' }}>{service.title}</h3>
                     <p className="text-sm text-gray-600">{service.description}</p>
