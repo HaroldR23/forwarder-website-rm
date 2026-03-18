@@ -42,10 +42,11 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   
-  --brand-navy: #0A1F44;
-  --brand-teal: #1C7C8D;
-  --brand-orange: #FF7A00;
-  --brand-white: #FFFFFF;
+  --brand-navy: #1E3A5F;        /* Dark blue from logo text */
+  --brand-ocean: #2B7EC4;       /* Ocean blue from planet */
+  --brand-green: #4A9B6B;       /* Muted green from continents (less vibrant) */
+  --brand-sky: #87CEEB;         /* Sky blue from orbit ring */
+  --brand-white: #FFFFFF;       /* White */
 }
 
 .dark {

@@ -58,7 +58,7 @@ const Services = () => {
                       />
                       <div className="absolute inset-0 bg-linear-to-t from-(--brand-navy)/80 to-transparent" />
                       <div className="absolute bottom-4 left-4">
-                        <div className="w-12 h-12 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'var(--brand-orange)' }}>
+                        <div className="w-12 h-12 rounded-lg flex items-center justify-center" style={{ backgroundColor: 'var(--brand-ocean)' }}>
                           <Icon className="w-6 h-6 text-white" />
                         </div>
                       </div>

@@ -40,14 +40,14 @@ const MainServices = () => {
                 
                 <div className="lg:w-1/2">
                   <div className="flex items-center gap-4 mb-6">
-                    <div className="w-16 h-16 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'var(--brand-orange)' }}>
+                    <div className="w-16 h-16 rounded-xl flex items-center justify-center" style={{ backgroundColor: 'var(--brand-ocean)' }}>
                       <Icon className="w-8 h-8 text-white" />
                     </div>
                     <div>
                       <h2 className="text-3xl md:text-4xl" style={{ color: 'var(--brand-navy)' }}>
                         {service.title}
                       </h2>
-                      <p className="text-lg" style={{ color: 'var(--brand-teal)' }}>
+                      <p className="text-lg" style={{ color: 'var(--brand-green)' }}>
                         {service.sum_description}
                       </p>
                     </div>
@@ -56,7 +56,7 @@ const MainServices = () => {
                   <ul className="space-y-3">
                     {service.features?.map((feature) => (
                       <li key={feature} className="flex items-start gap-3">
-                        <div className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: 'var(--brand-teal)' }}>
+                        <div className="w-6 h-6 rounded-full flex items-center justify-center shrink-0 mt-0.5" style={{ backgroundColor: 'var(--brand-green)' }}>
                           <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                           </svg>

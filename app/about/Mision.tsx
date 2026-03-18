@@ -16,9 +16,9 @@ const Mision = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <Card className="h-full" style={{ borderTop: '4px solid var(--brand-orange)' }}>
+            <Card className="h-full" style={{ borderTop: '4px solid var(--brand-ocean)' }}>
               <CardContent className="p-8">
-                <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--brand-orange)' }}>
+                <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--brand-ocean)' }}>
                   <Target className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl md:text-3xl mb-4" style={{ color: 'var(--brand-navy)' }}>
@@ -39,9 +39,9 @@ const Mision = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <Card className="h-full" style={{ borderTop: '4px solid var(--brand-teal)' }}>
+            <Card className="h-full" style={{ borderTop: '4px solid var(--brand-green)' }}>
               <CardContent className="p-8">
-                <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--brand-teal)' }}>
+                <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--brand-green)' }}>
                   <Eye className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-2xl md:text-3xl mb-4" style={{ color: 'var(--brand-navy)' }}>

@@ -28,7 +28,7 @@ const WhyChooseUs = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="text-center"
                 >
-                  <div className="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center" style={{ backgroundColor: 'var(--brand-orange)' }}>
+                  <div className="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center" style={{ backgroundColor: 'var(--brand-ocean)' }}>
                     <Icon className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="mb-3" style={{ color: 'var(--brand-navy)' }}>{benefit.title}</h3>

@@ -200,11 +200,11 @@ export const values = [
 ];
 
 export const coverage = [
-    { region: "América", countries: "45 países", color: "var(--brand-orange)" },
-    { region: "Europa", countries: "38 países", color: "var(--brand-teal)" },
+    { region: "América", countries: "45 países", color: "var(--brand-ocean)" },
+    { region: "Europa", countries: "38 países", color: "var(--brand-green)" },
     { region: "Asia", countries: "42 países", color: "var(--brand-navy)" },
-    { region: "África", countries: "28 países", color: "var(--brand-orange)" },
-    { region: "Oceanía", countries: "12 países", color: "var(--brand-teal)" },
+    { region: "África", countries: "28 países", color: "var(--brand-ocean)" },
+    { region: "Oceanía", countries: "12 países", color: "var(--brand-green)" },
   ];
 
 export const articles = [

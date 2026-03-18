@@ -34,7 +34,7 @@ const GlobalCoverage = () => {
                     <Globe className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-xl mb-2 text-white">{region.region}</h3>
-                  <p className="text-(--brand-orange)">{region.countries}</p>
+                  <p className="text-(--brand-ocean)">{region.countries}</p>
                 </CardContent>
               </Card>
             </motion.div>
@@ -43,7 +43,7 @@ const GlobalCoverage = () => {
 
         <div className="text-center mt-12 text-white">
           <p className="text-lg">
-            Con presencia en <span className="text-(--brand-orange)">más de 150 países</span>, 
+            Con presencia en <span className="text-(--brand-ocean)">más de 150 países</span>, 
             estamos listos para llevar tu negocio a cualquier destino del mundo.
           </p>
         </div>

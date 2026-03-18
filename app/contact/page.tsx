@@ -48,7 +48,7 @@ const Contact = () => {
                 >
                   <Card className="h-full hover:shadow-xl transition-shadow bg-(--brand-navy)">
                     <CardContent className="p-6 text-center">
-                      <div className="w-14 h-14 rounded-full mx-auto mb-4 flex items-center justify-center" style={{ backgroundColor: 'var(--brand-orange)' }}>
+                      <div className="w-14 h-14 rounded-full mx-auto mb-4 flex items-center justify-center" style={{ backgroundColor: 'var(--brand-ocean)' }}>
                         <Icon className="w-7 h-7 text-white" />
                       </div>
                       <h3 className="mb-3 text-white font-bold" >{info.title}</h3>
@@ -67,7 +67,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <section className="h-96 bg-gray-300 relative">
+      <section className="h-96 bg-(--brand-green) relative">
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center">
             <MapPin className="w-16 h-16 mx-auto mb-4" style={{ color: 'var(--brand-navy)' }} />

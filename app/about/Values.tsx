@@ -32,7 +32,7 @@ const Values = () => {
                 <Card className="h-full text-center hover:shadow-xl transition-shadow">
                   <CardContent className="p-6">
                     <div className="w-16 h-16 rounded-full mx-auto mb-4 flex items-center justify-center" style={{ backgroundColor: 'var(--brand-navy)' }}>
-                      <Icon className="w-8 h-8 text-(--brand-orange)" />
+                      <Icon className="w-8 h-8 text-(--brand-ocean)" />
                     </div>
                     <h3 className="mb-3" style={{ color: 'var(--brand-navy)' }}>{value.title}</h3>
                     <p className="text-sm text-gray-600">{value.description}</p>

@@ -29,7 +29,7 @@ const Hero = () => {
         >
           Soluciones de Logística Global
           <br />
-          <span className="text-(--brand-orange)">para tu Negocio</span>
+          <span className="text-(--brand-ocean)">para tu Negocio</span>
         </motion.h1>
         
         <motion.p 
@@ -48,7 +48,7 @@ const Hero = () => {
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <Link href="/contact">
-            <Button size="lg" className="bg-(--brand-orange) hover:bg-(--brand-orange)/90 text-white text-lg px-8 h-14 cursor-pointer">
+            <Button size="lg" className="bg-(--brand-ocean) hover:bg-(--brand-ocean)/90 text-white text-lg px-8 h-14 cursor-pointer">
                 Contáctanos
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
