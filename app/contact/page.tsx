@@ -6,9 +6,8 @@ import { MapPin } from "lucide-react";
 import { Card, CardContent } from "../common/Card";
 import { contactInfo } from "../constants";
 
+
 const Contact = () => {
-
-
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -54,9 +53,11 @@ const Contact = () => {
                       </div>
                       <h3 className="mb-3 text-white font-bold" >{info.title}</h3>
                       {info.details.map((detail, detailIndex) => (
-                        <p key={detailIndex} className="text-sm text-white">
-                          {detail}
-                        </p>
+                        <div key={detailIndex}>
+                          <p className="text-sm text-white">
+                            {detail}
+                          </p>
+                        </div>
                       ))}
                     </CardContent>
                   </Card>
@@ -71,7 +72,7 @@ const Contact = () => {
           <div className="text-center">
             <MapPin className="w-16 h-16 mx-auto mb-4" style={{ color: 'var(--brand-navy)' }} />
             <p className="text-xl" style={{ color: 'var(--brand-navy)' }}>
-              Av. Principal 1234, Buenos Aires, Argentina
+              Buenos Aires, Argentina
             </p>
           </div>
         </div>

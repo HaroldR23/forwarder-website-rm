@@ -1,6 +1,6 @@
-import { Ship, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Ship, Mail, Phone, MapPin } from "lucide-react";
 import Link from "next/link";
-import { companyName, navLinks, phoneNumber, services } from "../constants";
+import { companyName, navLinks, rodrigosPhoneNumber, santiagosPhoneNumber, services } from "../constants";
 
 const Footer = () => {
   return (
@@ -21,7 +21,7 @@ const Footer = () => {
             <p className="text-sm text-gray-300 mb-4">
               Conectamos tu carga con el mundo — Rápido, Seguro y Confiable
             </p>
-            <div className="flex gap-3">
+            {/* <div className="flex gap-3">
               <a href="#" className="w-8 h-8 rounded-full bg-white/10 hover:bg-(--brand-orange) flex items-center justify-center transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>
@@ -34,7 +34,7 @@ const Footer = () => {
               <a href="#" className="w-8 h-8 rounded-full bg-white/10 hover:bg-(--brand-orange) flex items-center justify-center transition-colors">
                 <Instagram className="w-4 h-4" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Links */}
@@ -71,11 +71,15 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 shrink-0" />
-                <span>{phoneNumber}</span>
+                <span>{rodrigosPhoneNumber}</span>
+              </li>
+              <li className="flex items-center gap-2">
+                <Phone className="w-4 h-4 shrink-0" />
+                <span>{santiagosPhoneNumber}</span>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 shrink-0" />
-                <span>info@globalway.com</span>
+                <span>comercial@colsurcomex.com.ar</span>
               </li>
             </ul>
           </div>
@@ -85,14 +89,14 @@ const Footer = () => {
         <div className="pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
             <p>&copy; 2026 {companyName.join(" ")}. Todos los derechos reservados.</p>
-            <div className="flex gap-6">
+            {/* <div className="flex gap-6">
               <a href="#" className="hover:text-(--brand-orange) transition-colors">
                 Política de Privacidad
               </a>
               <a href="#" className="hover:text-(--brand-orange) transition-colors">
                 Términos de Servicio
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

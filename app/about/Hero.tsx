@@ -31,7 +31,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto"
         >
-          Más de 15 años conectando negocios con el mundo
+          Más de 10 años conectando negocios con el mundo
         </motion.p>
       </div>
     </section>

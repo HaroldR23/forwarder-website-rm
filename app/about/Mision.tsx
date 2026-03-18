@@ -25,10 +25,9 @@ const Mision = () => {
                   Nuestra Misión
                 </h3>
                 <p className="text-gray-700">
-                  Facilitar el comercio internacional de nuestros clientes mediante soluciones logísticas 
-                  eficientes, confiables y personalizadas. Nos comprometemos a ser el puente que conecta 
-                  productos y mercados, superando barreras geográficas y culturales con un servicio de 
-                  excelencia que impulse el crecimiento sostenible de cada empresa que confía en nosotros.
+                  Ofrecer soluciones logísticas personalizadas, cercanas y eficientes que simplifiquen el comercio 
+                  internacional de nuestros clientes. Acompañamos cada operación con transparencia, agilidad y el 
+                  compromiso de quien realmente entiende lo que significa estar del otro lado del mostrador.
                 </p>
               </CardContent>
             </Card>
@@ -49,10 +48,9 @@ const Mision = () => {
                   Nuestra Visión
                 </h3>
                 <p className="text-gray-700">
-                  Ser reconocidos como el socio logístico preferido en América Latina y un referente global 
-                  en innovación y calidad de servicio. Aspiramos a liderar la transformación digital del 
-                  sector, ofreciendo experiencias logísticas inteligentes, sostenibles y centradas en el 
-                  cliente, contribuyendo así al desarrollo del comercio internacional y la integración económica.
+                  Ser el referente en comercio exterior por la calidad humana de nuestro servicio. Queremos ser 
+                  reconocidos no solo por nuestra experiencia técnica, sino por nuestra capacidad de generar 
+                  confianza, anticipar necesidades y construir relaciones comerciales duraderas basadas en resultados reales.
                 </p>
               </CardContent>
             </Card>

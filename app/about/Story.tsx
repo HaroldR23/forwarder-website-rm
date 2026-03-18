@@ -18,22 +18,36 @@ const Story = () => {
               Nuestra Historia
             </h2>
             <div className="space-y-4 text-gray-700">
-              <p>
-                GlobalWay Forwarders nació en 2011 con una visión clara: democratizar el acceso al comercio 
-                internacional para empresas de todos los tamaños. Lo que comenzó como una pequeña agencia de 
-                carga en Buenos Aires, hoy se ha convertido en un referente regional en logística internacional.
-              </p>
-              <p>
-                A través de los años, hemos construido una red sólida de socios estratégicos en los cinco 
-                continentes, lo que nos permite ofrecer soluciones logísticas integrales y personalizadas. 
-                Nuestra experiencia abarca desde pequeñas cargas consolidadas hasta proyectos especiales de 
-                gran escala.
-              </p>
-              <p>
-                Hoy, con más de 25,000 envíos completados exitosamente y la confianza de más de 500 empresas, 
-                seguimos comprometidos con la innovación, la calidad de servicio y el crecimiento sostenible 
-                de nuestros clientes.
-              </p>
+             <p className="font-medium" style={{ color: 'var(--brand-ocean)' }}>
+                  COLSUR nace de la experiencia, pero sobre todo de una convicción.
+                </p>
+                <p>
+                  Somos dos profesionales con más de 10 años en el mundo del comercio exterior y la logística internacional, 
+                  habiendo formado parte de distintas empresas del sector. A lo largo de nuestra trayectoria adquirimos 
+                  experiencia en importación y exportación; operaciones multimodales, manejo de cargas IMO, transporte 
+                  aéreo, marítimo y terrestre; gestión documental, atención al cliente, supervisión de equipos y 
+                  operatoria en sistema MARÍA/MALVINA.
+                </p>
+                <p>
+                  Durante esos años, estuvimos en <strong>ambos lados del mostrador</strong>: como proveedores de servicios 
+                  y también como clientes. Esa doble mirada nos permitió entender en profundidad no solo cómo funciona la 
+                  operación, sino también cuáles son las verdaderas necesidades, preocupaciones y frustraciones de quienes 
+                  confían su logística a un tercero.
+                </p>
+                <p>
+                  Con esa experiencia, y con el objetivo de hacer las cosas de una manera diferente, decidimos tomar un 
+                  nuevo rumbo y crear COLSUR.
+                </p>
+                <p className="font-medium">
+                  Nuestro propósito es claro: brindar un servicio cercano, ágil y personalizado, donde cada cliente sienta 
+                  que su operación es única y prioritaria. Sabemos que detrás de cada embarque hay tiempos, costos y 
+                  expectativas que cumplir. Trabajamos con el compromiso de acompañar cada etapa del proceso con 
+                  responsabilidad y transparencia.
+                </p>
+                <p style={{ color: 'var(--brand-ocean)' }} className="font-semibold">
+                  COLSUR no es solo una empresa de comercio exterior. Es el resultado de años de aprendizaje, de haber 
+                  vivido los desafíos del sector y de la decisión de transformarlos en soluciones reales para nuestros clientes.
+                </p>
             </div>
           </motion.div>
 

@@ -23,8 +23,7 @@ const CTASection = () => {
           </p>
           <Link href="/contact">
             <Button size="lg" className="bg-(--brand-orange) hover:bg-(--brand-orange)/90 text-white text-lg px-10 h-14 cursor-pointer">
-              Solicitar Cotización Gratuita
-              <ArrowRight className="ml-2 w-5 h-5" />
+             Contáctanos <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </Link>
         </motion.div>

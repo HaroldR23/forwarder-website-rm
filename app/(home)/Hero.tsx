@@ -49,7 +49,7 @@ const Hero = () => {
         >
           <Link href="/contact">
             <Button size="lg" className="bg-(--brand-orange) hover:bg-(--brand-orange)/90 text-white text-lg px-8 h-14 cursor-pointer">
-              Cotizar Ahora
+                Contáctanos
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
           </Link>

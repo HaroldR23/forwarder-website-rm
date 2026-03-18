@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Ship, Menu, X } from "lucide-react";
-import Button from "../common/Button";
 import { companyName, navLinks } from "../constants";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -45,15 +44,6 @@ const Header = () => {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Link href="/contact">
-              <Button className="bg-(--brand-orange) hover:bg-(--brand-orange)/90 text-white cursor-pointer">
-                Cotizar Ahora
-              </Button>
-            </Link>
-          </div>
-
           {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2"
@@ -85,11 +75,6 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
-            <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-              <Button className="w-full mt-4 bg-(--brand-orange) hover:bg-(--brand-orange)/90 text-white cursor-pointer">
-                Cotizar Ahora
-              </Button>
-            </Link>
           </div>
         )}
       </div>
