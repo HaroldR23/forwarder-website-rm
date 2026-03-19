@@ -20,7 +20,7 @@ const Header = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <Image
-              src="/logotipo_colsur.png"
+              src="/header_logo.png"
               alt="Logo colsur"
               width={200}
               height={100}

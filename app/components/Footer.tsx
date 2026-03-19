@@ -24,7 +24,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <Image
-              src="/logotipo_colsur.png"
+              src="/footer_logo.png"
               alt="Logo colsur"
               width={200}
               height={100}
